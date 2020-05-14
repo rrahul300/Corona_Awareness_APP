@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+   >
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/national"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:weightSum="3"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/nationalCoronaDataConfirmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/nationalCoronaDataActive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="@string/app_name" />
+        <TextView
+            android:id="@+id/nationalCoronaDataDeath"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/app_name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/design_default_color_background"
+        android:weightSum="3"
+        android:layout_weight="1">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/selectState">
+
+        </Spinner>
+        <TextView
+            android:id="@+id/stateCoronaDataConfirmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/stateCoronaDataActive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/app_name" />
+        <TextView
+            android:id="@+id/stateCoronaDataDeath"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:text="@string/app_name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/district"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+        android:id="@+id/districtCoronaDataConfirmed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:text="@string/app_name"
+        android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/districtCoronaDataActive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/app_name"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/districtCoronaDataDead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:text="@string/app_name"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

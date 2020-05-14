@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "487381988285",
+    "firebase_url": "https://test-458b3.firebaseio.com",
+    "project_id": "test-458b3",
+    "storage_bucket": "test-458b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487381988285:android:14537ae7425f14fbc758d4",
+        "android_client_info": {
+          "package_name": "com.rahul.coronaawarenessapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487381988285-qtcadbcfo6lvl0ci0flj3013jimsdmp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT_v5xtBT7_gFzi9EYtV0R_KGlG3GRLUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487381988285-qtcadbcfo6lvl0ci0flj3013jimsdmp9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
